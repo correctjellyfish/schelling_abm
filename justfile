@@ -1,4 +1,4 @@
 #!/bin/env just
 
 run:
-    python schelling.py
+    solara run schelling_sim.py
