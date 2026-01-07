@@ -67,6 +67,8 @@ class SchellingAgent(CellAgent):
                     total_count += 1.0
                     if self.type == agent.type:
                         same_count += 1
+        if total_count < 1.0:
+            return 0.0  # No neighbors
         return same_count / total_count
 
     def move(self):

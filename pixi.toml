@@ -9,6 +9,12 @@ version = "0.1.0"
 
 [dependencies]
 mesa = ">=3.3.1,<4"
+solara = ">=1.55.1,<2"
+networkx = ">=3.6.1,<4"
+matplotlib = ">=3.10.8,<4"
+numpy = ">=2.4.0,<3"
+pandas = ">=2.3.3,<3"
+altair = ">=6.0.0,<7"
 
 [feature.dev.dependencies]
 mypy = ">=1.19.1,<2"
