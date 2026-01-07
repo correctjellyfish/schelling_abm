@@ -1,0 +1,19 @@
+[workspace]
+authors = ["Braden Griebel <bgriebel@uw.edu>"]
+channels = ["conda-forge"]
+name = "schelling"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+mesa = ">=3.3.1,<4"
+
+[feature.dev.dependencies]
+mypy = ">=1.19.1,<2"
+ruff = ">=0.14.10,<0.15"
+python-lsp-server = ">=1.14.0,<2"
+
+[environments]
+dev = ["default", "dev"]
