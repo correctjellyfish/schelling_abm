@@ -1,6 +1,4 @@
-"""
-Run the Schelling Model
-"""
+"""Run the Schelling Model."""
 
 from typing import cast
 
@@ -15,6 +13,7 @@ AGENT_START_COUNT = int(0.75 * (GRID_SIZE[0] * GRID_SIZE[1]))
 
 
 def agent_portrayal(agent: SchellingAgent) -> AgentPortrayalStyle:
+    """Create visual representation of an agent in the model."""
     match agent.type:
         case SchellingAgentType.BLUE:
             return AgentPortrayalStyle(color="tab:blue", size=AGENT_SIZE)
@@ -44,7 +43,7 @@ model_parameters = {
     "width": GRID_SIZE[0],
     "height": GRID_SIZE[1],
 }
-
+print("Hello")
 
 if __name__ == "__main__":
     schelling_model = SchellingModel(
