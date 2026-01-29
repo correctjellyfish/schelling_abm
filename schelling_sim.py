@@ -8,7 +8,7 @@ from mesa.visualization.components import AgentPortrayalStyle  # type: ignore
 from schelling_model import SchellingModel, SchellingAgent, SchellingAgentType
 
 AGENT_SIZE = 20
-GRID_SIZE = (50, 50)
+GRID_SIZE = (100, 100)
 AGENT_START_COUNT = int(0.75 * (GRID_SIZE[0] * GRID_SIZE[1]))
 
 
@@ -43,7 +43,6 @@ model_parameters = {
     "width": GRID_SIZE[0],
     "height": GRID_SIZE[1],
 }
-print("Hello")
 
 if __name__ == "__main__":
     schelling_model = SchellingModel(
